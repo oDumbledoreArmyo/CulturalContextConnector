@@ -66,33 +66,105 @@
 					<div class = "button-bro">
 						<div class = "button-left">
 							<div class = "button-bg">
-								<a href="step2-C.html">	<img src = "img/button-bg.png" alt="" title=""></a>
+								<a href="#">	<img src = "img/button-bg.png" alt="" title="" id="cultural-symbol"
+									onClick="change_pic_left(this)"></a>
 							</div>
 							<div class="icon-c">
 								<img src = "img/icon-c.png">
 							</div>
 							<div class = "button-text">
-								<a href="step2-C.html">从文化符号开始</a>
+								<a href="#">Cultural symbols</a>
 							</div>
-							<div class = "button-text-eng">
-								<a href="step2-C.html">	Start from the culture symbol</a>
-							</div>
+							<!-- <div class = "button-text-eng">
+								<a href="#">	Start from the culture symbol</a>
+							</div> -->
 						</div>
 
 						<div class = "button-right">
 							<div class = "button-bg">
-								<a href="step2-P.html"><img src = "img/button-bg.png" alt="" title=""></a>
+								<a href="#"><img src = "img/button-bg.png" alt="" title="" id="ML product"
+									onClick="change_pic_right(this)"></a>
 							</div>
 							<div class="icon-p">
 								<img src = "img/icon-p.png">
 							</div>
 							<div class = "button-text">
-								<a href="step2-P.html">从智能产品开始</a>
+								<a href="#">ML technology</a>
 							</div>
-							<div class = "button-text-eng">
-								<a href="step2-P.html">Start from the ML product</a>
+							<!-- <div class = "button-text-eng">
+								<a href="#">Start from the ML product</a>
 								
+							</div> -->
+							
+						</div>
+					</div>
+					<div class = "button-bro-1">
+						<div class = "button-left">
+							<div class = "button-bg">
+								<a href="#">	<img src = "img/button-bg.png" alt="" title="" id="active_pic3"
+									onClick="change_pic_left(this)"></a>
 							</div>
+							<div class="icon-c">
+								<img src = "img/icon-c.png">
+							</div>
+							<div class = "button-text">
+								<a href="#">Cultural symbols</a>
+							</div>
+							<!-- <div class = "button-text-eng">
+								<a href="#">	Start from the culture symbol</a>
+							</div> -->
+						</div>
+
+						<div class = "button-right">
+							<div class = "button-bg">
+								<a href="#"><img src = "img/button-bg.png" alt="" title="" id="active_pic4"
+									onClick="change_pic_right(this)"></a>
+							</div>
+							<div class="icon-p">
+								<img src = "img/icon-p.png">
+							</div>
+							<div class = "button-text">
+								<a href="#">ML technology</a>
+							</div>
+							<!-- <div class = "button-text-eng">
+								<a href="#">Start from the ML product</a>
+								
+							</div> -->
+							
+						</div>
+					</div>
+					<div class = "button-bro-2">
+						<div class = "button-left">
+							<div class = "button-bg">
+								<a href="#">	<img src = "img/button-bg.png" alt="" title="" id="active_pic5"
+									onClick="change_pic_left(this)"></a>
+							</div>
+							<div class="icon-c">
+								<img src = "img/icon-c.png">
+							</div>
+							<div class = "button-text">
+								<a href="#">Cultural symbols</a>
+							</div>
+							<!-- <div class = "button-text-eng">
+								<a href="#">	Start from the culture symbol</a>
+							</div> -->
+						</div>
+
+						<div class = "button-right">
+							<div class = "button-bg">
+								<a href="#"><img src = "img/button-bg.png" alt="" title="" id="active_pic6"
+									onClick="change_pic_right(this)"></a>
+							</div>
+							<div class="icon-p">
+								<img src = "img/icon-p.png">
+							</div>
+							<div class = "button-text">
+								<a href="#">ML technology</a>
+							</div>
+							<!-- <div class = "button-text-eng">
+								<a href="#">Start from the ML product</a>
+								
+							</div> -->
 							
 						</div>
 					</div>
@@ -101,38 +173,70 @@
 					<div class = "homepage-info">
 						<div class = "info-sum">
 							<div class="info-stepnum">
-								step 1
+								step 0
 							</div>
 							<p>
-								请根据您的设计需求进行选择：
+								Choose a design resource and a design material that you're going to combine.
 								
 							</p>
-							<div class = "info-sum-eng">
+							<!-- <div class = "info-sum-eng">
 								Please choose a button below according to your design needs:
-							</div>
+							</div> -->
 							
 						</div>
 						<div class = "info-left">
 							<p>
-								为文化符号设计相配的智能产品<br>
+								Design resources<br>
 							</p>
-							<div class = "info-left-eng">
+							<!-- <div class = "info-left-eng">
 								Design a matching ML product for a cultural symbol
-							</div>
+							</div> -->
 						</div>
 						<div class = "info-right">
 							<p>
-								为智能产品寻找相配的文化符号<br>
+								Design materials<br>
 							</p>
-							<div class = "info-right-eng">
+							<!-- <div class = "info-right-eng">
 								Find the matching cultural symbol for a ML product
-							</div>
+							</div> -->
 						</div>
 					
 					</div>
 			</section>
 			<!-- End banner Area -->
+		<script>
+			flag_left=0;
+			flag_right=0;
+			flag=0;
+
+			function change_pic_left(element) {
+				var imgObj = document.getElementById(element.id);
+				if (imgObj.getAttribute("src", 2) == "img/button-bg.png") {
+				imgObj.src = "img/button-bg-act.png";
+				flag += 1;
+				} else {
+				imgObj.src = "img/button-bg.png";
+				flag -= 1;
+				}
+				if (flag == 2){
+					window.location.href="step2-P.html";
+				}
+		}	
+		function change_pic_right(element) {
+				var imgObj = document.getElementById(element.id);
+				if (imgObj.getAttribute("src", 2) == "img/button-bg.png") {
+				imgObj.src = "img/button-bg-act.png";
+				flag += 1;
+				} else {
+				imgObj.src = "img/button-bg.png";
+				flag -= 1;
+				}
+				if (flag == 2){
+					window.location.href="step2-P.html";
+				}
+		}	
 		
+		</script>
 			
 
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
