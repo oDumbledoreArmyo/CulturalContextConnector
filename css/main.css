@@ -2157,17 +2157,19 @@ h1, h2, h3, h4, h5, h6 {
   height:5vh;
   width: 100vw;
   background-color: rgb(17, 17, 17);
+  z-index: 999;
 }
 .nav-menu-container .logo{
 position: absolute;
 line-height: 5vh;
 left: 5vh;
-
+  z-index: 1000;
 }
 .nav-menu-container .nav-menu-text{
   position: absolute;
   line-height: 5vh;
   right: 5vh;
+    z-index: 1000;
 }
 /* Nav Meu Styling */
 .nav-menu a {
@@ -2218,7 +2220,7 @@ left: 5vh;
   position: fixed;
   right: 15px;
   z-index: 999;
-  top: 0.5vh; 
+  top: 0.5vh;
   border: 0;
   background: none;
   font-size: 24px;
@@ -2615,9 +2617,39 @@ body.mobile-nav-active #mobile-nav-toggle {
 #btn-hide{
   display: none;
 }
+#line1{
+  display: none;
+}
+#startbtn{
+  display: none;
+}
 
 
 /*-------- Start Banner Area ------------*/
+.line1{
+  margin: 0 auto;
+  text-align: center;
+  width: 20vw;
+  height: auto;
+  z-index: 999;
+}
+.line1 img{
+  position: absolute;
+  margin-top: 29vh !important;
+  margin: 0 auto;
+  text-align: center;
+  width: 20vw;
+  height: auto;
+z-index: 999;
+}
+.design-resources{
+  position: absolute;
+  top: 5vh;
+  width: 50vw;
+  height: 95vh;
+  background: #333333;
+  z-index: 1;
+}
 .draw-btn-2{
   position: fixed;
   height: 100vh;
@@ -2650,7 +2682,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .draw-box-outdiv{
   position: fixed;
-  right: 0; 
+  right: 0;
 }
 .draw-box{
   position: fixed;
@@ -2798,7 +2830,7 @@ position: absolute;
   }
 .step2-p-1-btn-row4{
   /* position: absolute;*/
-  margin-top: 25vw; 
+  margin-top: 25vw;
   }
 .step2-p-1-btn{
   float: left;
@@ -2913,9 +2945,9 @@ width: 30vw;
 
 .icon-c{
 
-  width: auto;
-  height: 4vh;
-  margin-top: -12vh !important;
+  width: 5vh;
+  height: auto;
+  margin-top: -14vh !important;
   margin: 0 auto;
   text-align: center;
   /* width: auto;
@@ -2924,19 +2956,19 @@ width: 30vw;
   margin-top: -10vw; */
 }
 .icon-c img{
-  width: auto;
-  height: 4vh;
+  width: 5vh;
+  height: auto;
 }
 .icon-p{
-  width: auto;
-  height: 4vh;
-  margin-top: -12vh !important;
+  width: 5vh;
+  height: auto;
+  margin-top: -14vh !important;
   margin: 0 auto;
   text-align: center;
 }
 .icon-p img{
-  width: auto;
-  height: 4vh;
+  width: 5vh;
+  height: auto;
 }
 .check-list{
   position: absolute;
@@ -2960,7 +2992,7 @@ margin-left: 3vh;
   right: 2vw;
   width: 5vw;
   height: 5vw;
- 
+
 }
 .front-back img{
   width: 5vw;
@@ -3054,11 +3086,11 @@ display:inherit;
 text-align: left;
 color: rgb(255, 255, 255);
 font-weight: 800;
-font-size: 2em;
+font-size: 1.5em;
 text-transform: uppercase;
 outline: none;
-margin-top: -9vw;
-padding-left: 5vw;
+margin-top: -11vw;
+padding-left: 1vw;
 
 }
 .show-hide-2
@@ -3074,11 +3106,11 @@ display:inherit;
 text-align: left;
 color: rgb(255, 255, 255);
 font-weight: 800;
-font-size: 2em;
+font-size: 1.5em;
 text-transform: uppercase;
 outline: none;
-margin-top: -9vw;
-padding-left: 5vw;
+margin-top: -11vw;
+padding-left: 1vw;
 
 }
 .show-hide-3
@@ -3094,11 +3126,11 @@ display:inherit;
 text-align: left;
 color: rgb(255, 255, 255);
 font-weight: 800;
-font-size: 2em;
+font-size: 1.5em;
 text-transform: uppercase;
 outline: none;
-margin-top: -9vw;
-padding-left: 5vw;
+margin-top: -11vw;
+padding-left: 1vw;
 }
 .show-hide-4
 {
@@ -3113,11 +3145,11 @@ display:inherit;
 text-align: left;
 color: rgb(255, 255, 255);
 font-weight: 800;
-font-size: 2em;
+font-size: 1.5em;
 text-transform: uppercase;
 outline: none;
-margin-top: -9vw;
-padding-left: 5vw;
+margin-top: -11vw;
+padding-left: 1vw;
 }
 .step-info .info-sum p{
   position: absolute;
@@ -3125,7 +3157,7 @@ padding-left: 5vw;
   top:10vh;
   font-weight: 500;
   font-size: 1.5em;
-  
+
 }
 .step-info .info-sum .info-sum-eng{
   position: absolute;
@@ -3174,39 +3206,42 @@ padding-left: 5vw;
   font-weight: 800;
   font-size:10em;
   text-transform: uppercase;
+
 }
  .info-1{
   color: #fff;
   font-size:1vw;
-  margin-left: 5vw;
+  margin-left: 1vw;
   margin-top: 4vw;
-  
+
 }
  .info-2{
   color: #fff;
   font-size:1vw;
-  margin-left: 5vw;
+  margin-left: 1vw;
   margin-top: 4vw;
 }
 .info-3{
   color: #fff;
   font-size:1vw;
-  margin-left: 5vw;
+  margin-left: 1vw;
   margin-top: 4vw;
 }
 .info-4{
   color: #fff;
   font-size:1vw;
-  margin-left: 5vw;
+  margin-left: 1vw;
   margin-top: 4vw;
 }
+
 .homepage-info .info-sum p{
   position: absolute;
-  left:5vw;
-  top:10vh;
-  font-weight: 500;
-  font-size:1.5em;
-  
+  left:30vw;
+  top:1vh;
+  font-weight: 300;
+  font-size:1em;
+  z-index: 999;
+
 }
 .homepage-info .info-sum .info-sum-eng{
   position: absolute;
@@ -3231,18 +3266,20 @@ padding-left: 5vw;
   font-size:1em;
   text-align: center;
   width:20vw;
-  height:20vw; 
+  height:20vw;
   position:absolute;
   left: 20vw;
+  z-index: 999;
 }
 .homepage-info .info-right{
   width:20vw;
-  height:20vw; 
+  height:20vw;
   position:absolute;
   right: 20vw;
   top:80vh;
   font-size:1em;
   text-align: center;
+    z-index: 999;
 }
 .homepage-info p{
   color: #fff;
@@ -3252,12 +3289,23 @@ padding-left: 5vw;
 
 .homepage-info .info-stepnum{
   position: absolute;
-  left:2vw;
+  left:1vw;
+  bottom:10vh;
+  color: #222222;
+  font-weight: 800;
+  font-size:5em;
+  text-transform: uppercase;
+  z-index: 999;
+}
+.info-stepnum-r{
+  position: absolute;
+  right:1vw;
   bottom:10vh;
   color: rgb(43, 43, 43);
   font-weight: 800;
-  font-size:10em;
+  font-size:5em;
   text-transform: uppercase;
+  z-index: 999;
 }
 
 .banner-area {
@@ -3266,30 +3314,35 @@ padding-left: 5vw;
 /* background: -moz-linear-gradient(0deg, #000000 0%, #000000a6 100%);
 background: -webkit-linear-gradient(0deg,#000000 0%, #000000a6 100%);
 background: -ms-linear-gradient(0deg,#000000 0%, #000000a6 100%); */
+z-index: 888;
 }
 .startpage-info{
-  background: rgb(24, 24, 24);
+
+  z-index: 999;
 }
 .button-bro{
   width:100vw;
   height:20vw;
   top: 20vh;
   position:absolute;
- 
+  z-index: 999;
+
 }
 .button-bro-1{
   width:100vw;
   height:20vw;
  top: 40vh;
   position:absolute;
- 
+  z-index: 999;
+
 }
 .button-bro-2{
   width:100vw;
   height:20vw;
  top: 60vh;
   position:absolute;
- 
+  z-index: 999;
+
 }
 .button-bro-s2p{
   width:100vw;
@@ -3297,41 +3350,41 @@ background: -ms-linear-gradient(0deg,#000000 0%, #000000a6 100%); */
   top: 20vh;
   left: 10vw;
   position:absolute;
- 
+
 }
 .button-1 {
   width:32vw;
-  height:8vw;  
+  height:8vw;
   position:absolute;
 
 }
 .button-2 {
   width:32vw;
-  height:8vw;  
+  height:8vw;
   position:absolute;
   margin-top: 9vw;
 }
 .button-3 {
   width:32vw;
-  height:8vw;  
+  height:8vw;
   position:absolute;
   top: 18vw;
 }
 .button-4 {
   width:32vw;
-  height:8vw;  
+  height:8vw;
   position:absolute;
   top: 27vw;
 }
 .button-left {
   width:20vw;
-  height:20vw; 
+  height:20vw;
   position:absolute;
   left: 20vw;
 }
 .button-right {
   width:20vw;
-  height:20vw;  
+  height:20vw;
   position:absolute;
   right: 20vw;
 }
@@ -3340,18 +3393,21 @@ background: -ms-linear-gradient(0deg,#000000 0%, #000000a6 100%); */
   text-align: center;
   margin: 0 auto;
   line-height: 2em;
+  z-index: 999;
 }
 .button-bro-1 .button-text{
   margin-top: 2vh !important;
   text-align: center;
   margin: 0 auto;
   line-height: 2em;
+  z-index: 999;
 }
 .button-bro-2 .button-text{
   margin-top: 2vh !important;
   text-align: center;
   margin: 0 auto;
   line-height: 2em;
+  z-index: 999;
 }
 .button-bro .button-text-eng{
   text-align: center;
@@ -3485,25 +3541,23 @@ opacity:1;
   text-align: center;
 }
 .button-bro .button-bg img{
-  
-  width:15vh;
-  height:15vh;
+
+  width:18vh;
+  height:18vh;
 }
 .button-bro-1 .button-bg img{
-  
-  width:15vh;
-  height:15vh;
+  width:18vh;
+  height:18vh;
 }
 .button-bro-2 .button-bg img{
-  
-  width:15vh;
-  height:15vh;
+  width:18vh;
+  height:18vh;
 }
 .button-bro-s2p img{
   margin: 0 auto;
   position: absolute;
   width:32vw;
-  height:8vw; 
+  height:8vw;
 }
 
 .startpage-img img{
@@ -3524,7 +3578,7 @@ opacity:1;
 }
 .button-start{
   text-align: center;
-  
+
 }
 .button-start-eng{
 margin-top: 1vh;
@@ -3539,7 +3593,7 @@ text-align: center;
   color: rgb(255, 255, 255);
   font-size: 2vw;
   outline: none;
-  
+
 }
 .startpage-button{
   transition: 0.5s;
@@ -3551,6 +3605,7 @@ opacity: 0.5;
   bottom:27vh;
   width: 7vw;
   height: 7vw;
+  z-index: 999;
 }
 .startpage-button img{
   width: 7vw;
